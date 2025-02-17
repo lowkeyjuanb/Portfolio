@@ -5,9 +5,9 @@ export default function HomeSc() {
 return (
     <section className="w-full min-h-screen flex items-center justify-center pb-48 px-10">
         <div> 
-            <p class = "text-3xl">
+            <h2 class = "text-3xl">
                 Juan Barrera
-            </p>
+            </h2>
             <h1 class = "text-6xl">
                 SOFTWARE DEVELOPER
             </h1>
