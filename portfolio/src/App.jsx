@@ -1,6 +1,10 @@
 import './App.css'
 import Submenu from './components/submenu'
 import HomeSc from './screens/homesc'
+import AboutSc from './screens/about'
+import SkillsSc from './screens/skills'
+import PortfolioSc from './screens/portfolio'
+import ContactSc from './screens/contact'
 
 function App() {
   return (
@@ -10,16 +14,16 @@ function App() {
         <HomeSc/>
       </section>
       <section id="about">
-        <h1>About me</h1>
+        <AboutSc/>
       </section>
       <section id="skills">
-        <h1>Skills</h1>
+        <SkillsSc/>
       </section>
       <section id="portfolio">
-        <h1>Portfolio</h1>
+        <PortfolioSc/>
       </section>
       <section id="contact">
-        <h1>Contact</h1>
+        <ContactSc/>
       </section>
 
     </>
