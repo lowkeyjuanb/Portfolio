@@ -1,22 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Submenu from './components/submenu'
+import HomeSc from './screens/homesc'
 
 function App() {
   return (
     <>
       <Submenu/>
       <section id="home">
-        <div> 
-          <p class = "text-4xl">
-            Hello, my name is Juan Barrera
-          </p>
-          <h1 class = "text-8xl">
-            Software developer
-          </h1>
-        </div>
+        <HomeSc/>
       </section>
       <section id="about">
         <h1>About me</h1>
