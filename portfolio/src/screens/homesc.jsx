@@ -16,8 +16,19 @@ return (
                 <img src={githubSymbol} alt="Github Icon" className="w-9 h-9" />
                 <img src={linkedinSymbol} alt="Linkedin Icon" className="w-9 h-9" />
             </div>
+            
+        <h1 className='flex justify-start text-justify'>
+                IT BERRIES
+        </h1>
+        <p className='flex justify-start text-justify'>
+        I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. 
+        At ITberries, we design and develop websites and web applications. 
+        Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, 
+        which we are organizing for the sixth time. Working in a club as a Front-End Developer 
+        definitely developed my skills in group work and working under time pressure. 
+        If you want to know more about us, click the button below! 
+        </p>
         </div>
-        
     </section>
 );
 }
