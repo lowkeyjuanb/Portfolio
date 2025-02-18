@@ -17,8 +17,8 @@ function ButtonForSubmenu({ buttonName, targetId }) {
 
 export default function Submenu() {
   return (
-      <section className="w-full bg-[#0B0B0B] shadow-md rounded-b">
-          <div className="flex justify-end gap-4 p-3 px-5">
+      <section className="w-full bg-slate-800 shadow-md rounded-b">
+          <div className="flex justify-end gap-4 p-5">
               <ButtonForSubmenu buttonName="Home" targetId="home" />
               <ButtonForSubmenu buttonName="About Me" targetId="about" />
               <ButtonForSubmenu buttonName="Skills" targetId="skills" />

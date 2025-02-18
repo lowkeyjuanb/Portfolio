@@ -2,7 +2,7 @@ import AboutKeyPoints from "../components/aboutKeyPoints";
 import TitleSquare from "../components/titleSquare";
 export default function AboutSc() {
 return (
-    <section className="w-full flex flex-col items-center py-20">
+    <section className="w-full flex flex-col items-center py-20 px-10">
         <TitleSquare titleSquare="ABOUT ME"/>
         <p className="mt-10 text-lg max-w-4xl text-center">
             Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. 

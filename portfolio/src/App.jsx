@@ -9,22 +9,24 @@ import ContactSc from './screens/contact'
 function App() {
   return (
     <>
-      <Submenu/>
-      <section id="home">
-        <HomeSc/>
-      </section>
-      <section id="about">
-        <AboutSc/>
-      </section>
-      <section id="skills">
-        <SkillsSc/>
-      </section>
-      <section id="portfolio">
-        <PortfolioSc/>
-      </section>
-      <section id="contact">
-        <ContactSc/>
-      </section>
+      <div className='bg-gray-100 shadow-xl'>
+        <Submenu/>
+        <section id="home">
+          <HomeSc/>
+        </section>
+        <section id="about">
+          <AboutSc/>
+        </section>
+        <section id="skills">
+          <SkillsSc/>
+        </section>
+        <section id="portfolio">
+          <PortfolioSc/>
+        </section>
+        <section id="contact">
+          <ContactSc/>
+        </section>
+      </div>
 
     </>
   )

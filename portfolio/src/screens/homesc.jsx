@@ -18,7 +18,7 @@ return (
                     <img src={linkedinSymbol} alt="Linkedin Icon" className="w-9 h-9" />
                 </div>
             </div>
-        <div className='bg-black text-white p-10 text-2xl'>
+        <div className='bg-slate-800 text-white p-10 text-2xl'>
             <h1 className='flex justify-start text-justify font-bold'>
                 IT BERRIES
             </h1>

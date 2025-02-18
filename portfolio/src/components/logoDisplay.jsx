@@ -1,8 +1,8 @@
 export default function logoDisplay({ lgSrc, lgName }) {
     return (
-      <section className="text-center items-center justify-center">
-        <img src={lgSrc} alt={lgName} className="w-9 h-9" />
-        <h1 className="text-center">{lgName}</h1>
+      <section className="flex flex-col text-center items-center justify-center">
+        <img src={lgSrc} alt={lgName} className="w-12 h-12" />
+        <h1 className="text-center text-xl">{lgName}</h1>
       </section>
     );
   }
