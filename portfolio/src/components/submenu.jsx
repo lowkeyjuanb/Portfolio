@@ -5,7 +5,7 @@ function ButtonForSubmenu({ buttonName, targetId }) {
 
   // Add a conditional check for "Contact" button
   const buttonStyle = buttonName === "Contact" 
-    ? "bg-white text-black" // White background, black text for Contact
+    ? "bg-[#8824E0] text-white" // White background, black text for Contact
     : "text-[#f1f1f1]"; // Default text color for other buttons
 
   return (
@@ -17,14 +17,14 @@ function ButtonForSubmenu({ buttonName, targetId }) {
 
 export default function Submenu() {
   return (
-      <section className="w-full bg-slate-800 shadow-md rounded-b">
-          <div className="flex justify-end gap-4 p-5">
-              <ButtonForSubmenu buttonName="Home" targetId="home" />
-              <ButtonForSubmenu buttonName="About Me" targetId="about" />
-              <ButtonForSubmenu buttonName="Skills" targetId="skills" />
-              <ButtonForSubmenu buttonName="Portfolio" targetId="portfolio" />
-              <ButtonForSubmenu buttonName="Contact" targetId="contact" />
-          </div>
+    <section className="w-full shadow-md rounded-b fixed top-0 left-0 z-50 justify-end">
+      <div className="flex justify-end gap-4 p-5">
+        <ButtonForSubmenu buttonName="Home" targetId="home" />
+        <ButtonForSubmenu buttonName="About Me" targetId="about" />
+        <ButtonForSubmenu buttonName="Skills" targetId="skills" />
+        <ButtonForSubmenu buttonName="Portfolio" targetId="portfolio" />
+        <ButtonForSubmenu buttonName="Contact" targetId="contact" />
+      </div>
     </section>
   );
 }
