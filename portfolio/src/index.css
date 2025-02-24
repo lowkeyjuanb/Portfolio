@@ -5,38 +5,14 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #242424;
-  background-color: #f1f1f1;
+  color: #f1f1f1;
+  background-color: #000000;
   
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
   --color1: 18, 113, 255;
   --circle-size: 80%;
   --blending: hard-light;
-}
-
-@keyframes moveInCircle {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes moveVertical {
-  0% {
-    transform: translateY(-50%);
-  }
-  50% {
-    transform: translateY(50%);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
 }
 
 @keyframes moveHorizontal {
@@ -91,6 +67,12 @@
 
     opacity: 0.7;
   }
+  .text-container {
+    position: relative; /* Ensures text is above background */
+    z-index: 10; /* Places text above the gradient effect */
+    color: #f1f1f1; /* Explicitly set text color */
+  }
+  
 }
 
 @tailwind base;
