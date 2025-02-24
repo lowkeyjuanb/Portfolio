@@ -3,9 +3,8 @@ import linkedinSymbol from '../assets/linkedin-symbol.svg'
 import mailSymbol from '../assets/mail-symbol.svg'
 export default function HomeSc() {
 return (
-    <section className="w-full max-h-full flex">
-        <div className=''> 
-            <div className='my-32'>
+    <section className="w-full max-h-full">
+            <div className='py-32'>
                 <h2 class = "text-3xl justify-center">
                     Juan Barrera
                 </h2>
@@ -22,16 +21,21 @@ return (
             <h1 className='flex justify-start text-justify font-bold'>
                 IT BERRIES
             </h1>
-            <p className='flex justify-start text-justify py-5 font-thin text-base'>
-                I am one of the members of a scientific club that brings together enthusiasts of the Internet and new technologies. 
-                At ITberries, we design and develop websites and web applications. 
-                Apart from the projects, our biggest undertaking is the Ciemna Strona UX conference, 
-                which we are organizing for the sixth time. Working in a club as a Front-End Developer 
-                definitely developed my skills in group work and working under time pressure. 
-                If you want to know more about us, click the button below! 
-            </p>
+            <div className="flex flex-row gap-6 place-items-stretch w-full">
+                <div className="flex-1 text-center p-4">
+                    TELNOR
+                </div>
+                <div className="flex-1 text-center p-4">
+                    TELNOR
+                </div>
+                <div className="flex-1 text-center p-4">
+                    TELNOR
+                </div>
+                <div className="flex-1 text-center p-4">
+                    TELNOR
+                </div>
+            </div>
         </div>   
-        </div>
     </section>
 );
 }
