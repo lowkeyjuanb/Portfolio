@@ -13,7 +13,7 @@ import engSymbol from '../assets/en-lg.svg'
 import LogoDisplay from "../components/logoDisplay";
 export default function SkillsSc() {
     return (
-        <section className="w-full flex flex-col items-center pt-20 px-10">
+        <section className="w-full flex flex-col items-center py-40 px-10">
             <div className="absolute pt-32 w-[300px] bg-gradient-to-t from-black to-blue-700 blur-3xl rounded-full opacity-100 ">
             </div>
             <div className='relative'>
