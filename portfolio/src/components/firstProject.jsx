@@ -7,14 +7,18 @@ import weeiiLogo from '../assets/weeii-logo.svg'
 export default function FirstProject({}) {
     return (
       <section className="w-full flex flex-col items-center my-10 px-10">
-        <h2 className='text-gray-300'>
-            Weeii App · 2024 - 2025
-        </h2>
-        <h1 className='w-full text-4xl pb-14 mt-3'>
-            Creating and optimizing features cross-platform apps.
-        </h1>
+        <div className="absolute pt-32 w-[700px] bg-gradient-to-t from-black to-blue-700 blur-3xl rounded-full opacity-100 ">
+        </div>
+        <div className='relative'>
+            <h2 className='text-gray-300'>
+                Weeii App · 2024 - 2025
+            </h2>
+            <h1 className='w-full text-4xl pb-14 mt-3'>
+                Creating and optimizing features cross-platform apps.
+            </h1>
+        </div>
         {/* <div className='absolute pt-52 px-10'>
-            <img src={weeiiLogo} alt='Weeii Logo' className='w-screen opacity-50'></img>
+            <img src={weeiiLogo} alt='Weeii Logo' className='w-screen'></img>
         </div> */}
         <div className='flex flex-row gap-5'>
             {/* iPhone frame container */}
