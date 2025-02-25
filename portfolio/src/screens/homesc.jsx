@@ -14,11 +14,11 @@ return (
             <h1 class = "text-6xl justify-center text-container">
                 I'm a software developer.
             </h1>
-            {/* <div className="flex gap-4 justify-center mt-8">
-                <img src={mailSymbol} alt="Mail Icon" className="w-9 h-9" />
-                <img src={githubSymbol} alt="Github Icon" className="w-9 h-9" />
-                <img src={linkedinSymbol} alt="Linkedin Icon" className="w-9 h-9" />
-            </div> */}
+            <div className="flex gap-4 justify-center mt-8">
+                <img src={mailSymbol} alt="Mail Icon" className="w-9 h-9 filter invert opacity-80" />
+                <img src={githubSymbol} alt="Github Icon" className="w-9 h-9 filter invert opacity-80" />
+                <img src={linkedinSymbol} alt="Linkedin Icon" className="w-9 h-9 filter invert opacity-80" />
+            </div>
         </div>
     </section>
 );

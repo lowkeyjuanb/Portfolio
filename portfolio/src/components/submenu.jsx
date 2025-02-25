@@ -17,12 +17,12 @@ function ButtonForSubmenu({ buttonName, targetId }) {
 
 export default function Submenu() {
   return (
-    <section className="w-full shadow-md rounded-b fixed top-0 left-0 z-50 justify-end">
+    <section className="w-full bg-black shadow-md rounded-b fixed top-0 left-0 z-50 justify-end">
       <div className="flex justify-end gap-4 p-5">
         <ButtonForSubmenu buttonName="Home" targetId="home" />
-        <ButtonForSubmenu buttonName="About Me" targetId="about" />
-        <ButtonForSubmenu buttonName="Skills" targetId="skills" />
         <ButtonForSubmenu buttonName="Portfolio" targetId="portfolio" />
+        <ButtonForSubmenu buttonName="About" targetId="about" />
+        <ButtonForSubmenu buttonName="Skills" targetId="skills" />
         <ButtonForSubmenu buttonName="Contact" targetId="contact" />
       </div>
     </section>
