@@ -21,7 +21,7 @@ export default function Submenu() {
       <div className="flex shadow-md rounded-b w-fit justify-center gap-4 p-5 max-w-[1200px] mx-auto bg-black bg-opacity-50">
         <ButtonForSubmenu buttonName="Home" targetId="home" />
         <ButtonForSubmenu buttonName="Portfolio" targetId="portfolio" />
-        {/* <ButtonForSubmenu buttonName="About" targetId="about" /> */}
+        <ButtonForSubmenu buttonName="About" targetId="about" />
         <ButtonForSubmenu buttonName="Skills" targetId="skills" />
         <ButtonForSubmenu buttonName="Contact" targetId="contact" />
       </div>

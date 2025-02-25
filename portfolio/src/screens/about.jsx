@@ -1,37 +1,27 @@
-import AboutKeyPoints from "../components/aboutKeyPoints";
-import TitleSquare from "../components/titleSquare";
+import profile from "../assets/profile.jpg";
+
 export default function AboutSc() {
-return (
-    <section className="w-full flex flex-col items-center pt-20 px-10">
-         <div className="absolute pt-32 w-[300px] bg-gradient-to-t from-black to-blue-700 blur-3xl rounded-full opacity-100 ">
-        </div>
-        <div className='relative'>
-            <h1 className='w-full text-4xl pb-10 mt-3'>
-                About me.
+  return (
+    <section className="w-full h-fit flex flex-row gap-24 justify-center items-center pt-32 px-10 bg-gradient-to-b from-black via-blue-950 to-black">
+        <div className="flex flex-col items-left text-left max-w-5xl">
+            <h1 className="text-4xl pb-5">
+                About Me
             </h1>
-        <p className="text-lg max-w-5xl text-center">
-        My passion for creating innovative solutions helps me support businesses in reaching their goals. <br/>
-        I thrive in collaborative environments, bringing technical skills and a problem-solving mindset to every project I work on.
-        </p>
+            <p className="text-lg text-gray-300 mb-5 justify-left">
+                I’m a <strong>Full-Stack Developer</strong> with a deep passion for creating scalable and innovative software solutions. I graduated <strong>magna cum laude</strong> with a <strong>Bachelor's in Electronic Cybernetics Engineering</strong>, and I’m skilled in <strong>JavaScript, Python, Dart, SQL</strong>, and more. Throughout my career, I’ve collaborated with teams to design and develop applications that solve real-world problems.
+            </p>
+            <p className="text-lg text-gray-300 justify-left">
+                My approach blends <strong>technical proficiency</strong> with a focus on delivering results. Whether it’s building user-friendly <strong>front-end interfaces</strong> or crafting optimized <strong>back-end systems</strong>, I’m committed to helping businesses succeed through tailored solutions. I thrive in dynamic environments, constantly seeking ways to <strong>learn</strong> and <strong>grow</strong>.
+            </p>
         </div>
-        <svg width="100" height="4" className="m-20">
-        <rect width="100" height="4" fill="black" />
-        </svg>
-        <div className="flex w-full gap-10">
-        <AboutKeyPoints 
-            keyPointName="Development" 
-            keyPointDesc="I build custom web applications, from front-end to back-end, tailored to your business needs. I work closely with you to create user-friendly and high-performing websites." 
-        />
-
-        <AboutKeyPoints 
-            keyPointName="Maintenance" 
-            keyPointDesc="I provide ongoing website support to ensure smooth performance, fix bugs, and keep your site secure and up-to-date as your business evolves." 
+        <div className="flex justify-center mt-10">
+        <img
+            src={profile}
+            className="w-72 h-72 rounded-full object-cover shadow-2xl shadow-purple-500/50"
+            alt="Profile"
         />
 
         </div>
-        <svg width="100" height="4" className="mt-20">
-        <rect width="100" height="4" fill="black" />
-        </svg>
     </section>
-);
+  );
 }
