@@ -15,7 +15,7 @@ export default function SecondProject() {
                 <h1 className='w-full text-4xl pb-24 mt-3'>
                     Crafting and designing websites.
                 </h1>
-                <div className="flex flex-row gap-5">
+                <div className="flex flex-col lg:flex-row gap-5">
                     <div>
                         <img src={otorrinoHs} alt="" className='rounded-md' />
                     </div>

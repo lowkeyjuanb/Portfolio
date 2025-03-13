@@ -20,7 +20,7 @@ export default function FirstProject({}) {
         {/* <div className='absolute pt-52 px-10'>
             <img src={weeiiLogo} alt='Weeii Logo' className='w-screen'></img>
         </div> */}
-        <div className='flex flex-row gap-5'>
+        <div className='flex flex-col lg:flex-row gap-5'>
             {/* iPhone frame container */}
             <div className="relative w-[300px] h-[600px] flex justify-center items-center">
                 {/* Changing Screenshot with Fade Effect */}
