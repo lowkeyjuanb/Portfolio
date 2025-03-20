@@ -9,10 +9,13 @@ import ContactSc from './screens/contact'
 function App() {
   return (
     <>
-      <div className='bg-gray-100 shadow-xl'>
+      <div className='bg-[#000000] shadow-xl'>
         <Submenu/>
         <section id="home">
           <HomeSc/>
+        </section>
+        <section id="portfolio">
+          <PortfolioSc/>
         </section>
         <section id="about">
           <AboutSc/>
@@ -20,9 +23,7 @@ function App() {
         <section id="skills">
           <SkillsSc/>
         </section>
-        <section id="portfolio">
-          <PortfolioSc/>
-        </section>
+        
         <section id="contact">
           <ContactSc/>
         </section>

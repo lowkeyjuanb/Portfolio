@@ -1,29 +1,26 @@
-import AboutKeyPoints from "../components/aboutKeyPoints";
-import TitleSquare from "../components/titleSquare";
+import profile from "../assets/profile.jpg";
+
 export default function AboutSc() {
-return (
-    <section className="w-full flex flex-col items-center py-20 px-10">
-        <TitleSquare titleSquare="ABOUT ME"/>
-        <p className="mt-10 text-lg max-w-4xl text-center">
-            Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. 
-            Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
-        </p>
-        <svg width="100" height="4" className="m-20">
-        <rect width="100" height="4" fill="black" />
-        </svg>
-        <div className="flex w-full gap-10">
-            <AboutKeyPoints 
-            keyPointName="DEVELOPMENT" 
-            keyPointDesc="I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job." 
-            />
-            <AboutKeyPoints 
-                keyPointName="MAINTENANCE" 
-                keyPointDesc="I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job." 
+  return (
+    <section className="w-full h-fit flex flex-col pt-32 px-20 bg-gradient-to-b from-black via-blue-950 to-black">
+        <h1 className="text-4xl pb-5 text-center lg:text-left">
+            About Me
+        </h1>
+        <div className="flex flex-col-reverse sm:flex-col lg:flex-row lg:gap-2 items-center justify-between">
+            <div className="flex flex-col items-left text-center lg:text-left max-w-5xl lg:pb-0">
+                <p className="text-sm lg:text-lg text-gray-300 mb-5 justify-left">
+                    I’m a <strong>Full-Stack Developer</strong> with a deep passion for creating scalable and innovative software solutions. I graduated <strong>magna cum laude</strong> with a <strong>Bachelor's in Electronic Cybernetics Engineering</strong>, and I’m skilled in <strong>JavaScript, Python, Dart, SQL</strong>, and more. Throughout my career, I’ve collaborated with teams to design and develop applications that solve real-world problems.
+                </p>
+                <p className="text-sm lg:text-lg text-gray-300 justify-left">
+                    My approach blends <strong>technical proficiency</strong> with a focus on delivering results. Whether it’s building user-friendly <strong>front-end interfaces</strong> or crafting optimized <strong>back-end systems</strong>, I’m committed to helping businesses succeed through tailored solutions. I thrive in dynamic environments, constantly seeking ways to <strong>learn</strong> and <strong>grow</strong>.
+                </p>
+            </div>
+            <img
+                src={profile}
+                className="w-44 h-44 lg:w-72 lg:h-72 rounded-full object-cover shadow-2xl shadow-purple-500/50 my-5 sm:my-0"
+                alt="Profile"
             />
         </div>
-        <svg width="100" height="4" className="mt-20">
-        <rect width="100" height="4" fill="black" />
-        </svg>
     </section>
-);
+  );
 }
