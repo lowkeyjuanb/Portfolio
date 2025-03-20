@@ -13,10 +13,10 @@ export default function HomeSc() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
       <div className="gradient-container text-[#f1f1f1]">
         <div className="g1"></div>
-        <h2 className="text-5xl justify-center font-extralight text-container">
+        <h2 className="text-4xl sm:text-5xl justify-center font-extralight text-container">
           Hi, I'm Juan.
         </h2>
-        <h1 className="text-6xl justify-center text-container">
+        <h1 className="text-5xl sm:text-6xl justify-center text-container">
           I'm a software developer.
         </h1>
         <div className="flex gap-4 justify-center mt-8 text-container">
