@@ -1,5 +1,3 @@
 #root {
-  max-width: w-full;
-  margin: 0 auto;
-  text-align: center;
+  min-height: 100vh;
 }

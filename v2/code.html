@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevArchitect - Full-Stack Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Space+Grotesk:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#07006c",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "background": "#0b1326",
+                        "tertiary-fixed-dim": "#bcc7de",
+                        "tertiary-container": "#8691a7",
+                        "secondary": "#7bd0ff",
+                        "outline": "#908fa0",
+                        "surface": "#0b1326",
+                        "surface-container-low": "#131b2e",
+                        "surface-tint": "#c0c1ff",
+                        "inverse-surface": "#dae2fd",
+                        "outline-variant": "#464554",
+                        "primary": "#c0c1ff",
+                        "surface-container-lowest": "#060e20",
+                        "primary-container": "#8083ff",
+                        "on-background": "#dae2fd",
+                        "on-secondary-container": "#00374d",
+                        "surface-container-highest": "#2d3449",
+                        "on-secondary": "#00354a",
+                        "surface-variant": "#2d3449",
+                        "error": "#ffb4ab",
+                        "on-primary": "#1000a9",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#1f2a3c",
+                        "inverse-on-surface": "#283044",
+                        "secondary-fixed": "#c4e7ff",
+                        "surface-container": "#171f33",
+                        "on-surface": "#dae2fd",
+                        "tertiary": "#bcc7de",
+                        "on-secondary-fixed": "#001e2c",
+                        "surface-container-high": "#222a3d",
+                        "on-tertiary": "#263143",
+                        "on-secondary-fixed-variant": "#004c69",
+                        "surface-dim": "#0b1326",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-tertiary-fixed": "#111c2d",
+                        "primary-fixed": "#e1e0ff",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "inverse-primary": "#494bd6",
+                        "on-surface-variant": "#c7c4d7",
+                        "secondary-container": "#00a6e0",
+                        "surface-bright": "#31394d",
+                        "tertiary-fixed": "#d8e3fb",
+                        "on-primary-container": "#0d0096",
+                        "secondary-fixed-dim": "#7bd0ff",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "section-padding": "120px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Inter"],
+                        "h2": ["Inter"],
+                        "code-label": ["Space Grotesk"],
+                        "h1": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h3": ["1.75rem", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "h2": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "code-label": ["0.875rem", { "lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "h1": ["4rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["1.125rem", { "lineHeight": "1.75", "fontWeight": "400" }],
+                        "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .grid-bg {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(192, 193, 255, 0.5);
+        }
+        .btn-primary-glow {
+            box-shadow: 0 0 20px rgba(192, 193, 255, 0.2);
+        }
+        .btn-primary-glow:hover {
+            box-shadow: 0 0 30px rgba(192, 193, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10 shadow-2xl shadow-indigo-500/10">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-mono font-bold text-white tracking-tighter">DevArchitect</div>
+<div class="hidden md:flex space-x-8">
+<a class="font-sans tracking-tight text-sm font-medium text-slate-400 hover:text-indigo-300 transition-all duration-300 hover:text-white transition-colors" href="#projects">Projects</a>
+<a class="font-sans tracking-tight text-sm font-medium text-slate-400 hover:text-indigo-300 transition-all duration-300 hover:text-white transition-colors" href="#skills">Skills</a>
+<a class="font-sans tracking-tight text-sm font-medium text-slate-400 hover:text-indigo-300 transition-all duration-300 hover:text-white transition-colors" href="#experience">Experience</a>
+<a class="font-sans tracking-tight text-sm font-medium text-slate-400 hover:text-indigo-300 transition-all duration-300 hover:text-white transition-colors" href="#contact">Contact</a>
+</div>
+<button class="font-sans tracking-tight text-sm font-medium text-indigo-500 border border-indigo-500/30 px-4 py-2 rounded-DEFAULT hover:bg-indigo-500/10 transition-colors">Resume</button>
+</div>
+</nav>
+<!-- SideNavBar (Hidden on Mobile, Visible on Desktop as Alternative to Top Nav if needed, but per prompt, standard flow is Top Nav. Adding SideNav structural as requested by JSON but hidden to avoid conflict with Top Nav, acting as a structural anchor) -->
+<!-- Suppressed SideNavBar to prioritize TopAppBar Canvas per layout rules -->
+<main class="relative pt-32 pb-section-padding">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden px-8" id="home">
+<div class="absolute inset-0 grid-bg opacity-30 z-0 pointer-events-none"></div>
+<!-- Decorative Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] z-0 pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+<h1 class="font-h1 text-h1 text-on-background mb-stack-md text-glow">Building High-Performance<br/>Web &amp; Mobile Experiences</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">
+                    Full-Stack &amp; Mobile Developer specializing in robust system architecture, clean execution, and seamless user experiences across all platforms.
+                </p>
+<div class="flex flex-col sm:flex-row gap-stack-md">
+<a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-DEFAULT font-code-label text-code-label btn-primary-glow transition-all duration-300 transform hover:-translate-y-1" href="#projects">View My Work</a>
+<a class="border border-outline-variant bg-surface/50 text-primary px-8 py-4 rounded-DEFAULT font-code-label text-code-label hover:bg-surface-variant transition-colors backdrop-blur-sm" href="#contact">Contact Me</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-padding max-w-container-max mx-auto px-8" id="about">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-h2 text-h2 text-on-background mb-stack-lg">Engineering Precision</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed text-left md:text-center">
+                    I am a senior developer focused on delivering high-end software craftsmanship. My approach sits at the intersection of performance and aesthetics, utilizing modern stacks to build scalable applications. I prioritize system architecture and clean execution over decorative clutter, ensuring every line of code serves a purpose.
+                </p>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-padding bg-surface-container-low" id="skills">
+<div class="max-w-container-max mx-auto px-8">
+<h2 class="font-h2 text-h2 text-on-background mb-stack-lg text-center">Technical Arsenal</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Frontend -->
+<div class="glass-panel p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl mr-3" data-icon="web">web</span>
+<h3 class="font-h3 text-h3 text-on-background text-xl">Frontend</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">React</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Vue.js</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Tailwind CSS</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">TypeScript</span>
+</div>
+</div>
+<!-- Backend -->
+<div class="glass-panel p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl mr-3" data-icon="database">database</span>
+<h3 class="font-h3 text-h3 text-on-background text-xl">Backend</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Node.js</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Python</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">PostgreSQL</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">GraphQL</span>
+</div>
+</div>
+<!-- Mobile -->
+<div class="glass-panel p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl mr-3" data-icon="smartphone">smartphone</span>
+<h3 class="font-h3 text-h3 text-on-background text-xl">Mobile</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Flutter</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">React Native</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Swift</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Kotlin</span>
+</div>
+</div>
+<!-- Tools -->
+<div class="glass-panel p-6 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
+<div class="flex items-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl mr-3" data-icon="build">build</span>
+<h3 class="font-h3 text-h3 text-on-background text-xl">Tools</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Docker</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">AWS</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">Git</span>
+<span class="bg-white/5 text-secondary px-3 py-1 rounded-full font-code-label text-xs">CI/CD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-padding max-w-container-max mx-auto px-8" id="projects">
+<h2 class="font-h2 text-h2 text-on-background mb-stack-lg text-center">Selected Works</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col group border-t border-l border-white/10">
+<div class="h-48 overflow-hidden relative">
+<img alt="Fintech Dashboard interface showing complex data visualizations" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sophisticated dark-mode fintech dashboard interface displayed on a high-resolution monitor. The screen shows complex data visualizations, glowing neon blue and purple charts, and crisp white typography against a deep charcoal background. The setting is a minimalist, modern developer workspace with subtle ambient under-monitor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm3wJXriOCa5knlWMAaKMLZnjpIfP_oaKQ5YF5sGJ0fh-DQ-cpYNbnUzt56hHxsqCW2tzH9e2peK8gC7iyCTODgKWNKTOn0DqYgJQaseOc0gElx-TBtMwXco4FzgINcRg4me_SpETvB8ofiTsySNuV7Tu2mXbs4pgZsZAOCE0j07SGGJ5vgXTFvvfmqNOT4sbc6lOulEtDpn1-yRVjJ_c_3ix8lYrB5eJLoDbkQC4qTGeLaGN7LBbwg9X9DWyCw811_nH19TK94WJu"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-on-background text-xl mb-2">FinMetrics Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow text-sm">Real-time financial data visualization platform built for high-frequency trading analytics.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">React</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">D3.js</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">Node.js</span>
+</div>
+<div class="flex gap-4 mt-auto">
+<button class="text-sm font-code-label text-primary hover:text-primary-fixed transition-colors flex items-center gap-1">Live Demo <span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span></button>
+<button class="text-sm font-code-label text-outline hover:text-white transition-colors flex items-center gap-1">GitHub <span class="material-symbols-outlined text-[16px]" data-icon="code">code</span></button>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col group border-t border-l border-white/10">
+<div class="h-48 overflow-hidden relative">
+<img alt="Mobile app interface for smart home control" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek, dark-themed mobile application interface designed for smart home control, displayed on a modern smartphone screen. The UI features minimalist glassmorphic cards, glowing toggles in electric blue, and clean sans-serif typography. The phone is resting on a dark slate desk, illuminated by soft, moody studio lighting highlighting the device edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMYMXn4SPy9vZyY7XZR2As6TCdh2WZBtXjBXIePVmhPHYux5R7x6-FUVdeOGBUOYJSx4HwWeR-TBY0Tnlg6WauwDCfG5lIUh519oth-tjhy7UR25u30FKIgtUgKrtVa9zdgRGCGP3TvlGl8eGKc8SDqmFog0ULf8UxuLEA_cGm509BtsGPmNatbfxFnvmCpQvp-J7hIzsfoTFB2EuMrvs3lVZ2eh0qM7xvTiY9m6S_eongWxEQi4m8-aj2Ssf0KzgFw6bQugCvS4j4"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-on-background text-xl mb-2">Nexus Home</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow text-sm">Cross-platform mobile application for centralized IoT smart home management.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">Flutter</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">Firebase</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">IoT</span>
+</div>
+<div class="flex gap-4 mt-auto">
+<button class="text-sm font-code-label text-primary hover:text-primary-fixed transition-colors flex items-center gap-1">Live Demo <span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span></button>
+<button class="text-sm font-code-label text-outline hover:text-white transition-colors flex items-center gap-1">GitHub <span class="material-symbols-outlined text-[16px]" data-icon="code">code</span></button>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col group border-t border-l border-white/10">
+<div class="h-48 overflow-hidden relative">
+<img alt="Code editor showing backend architecture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close-up view of a code editor on a dark screen displaying complex backend architecture in TypeScript. The syntax highlighting uses neon blues, purples, and muted greens against a deep charcoal background. The focus is sharp on the code structure, conveying high-end software craftsmanship in a professional developer environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6XhuqZA3MRRfVDqYMME05dPC3ToXpOy_ioaHDcbnt_mgOnzQJkhUIEABNv1_uUtA2bOBxmS9ZT-MoLAs_zO6QmEcjOkabRiBf-lGC3v6irV86iIRLiY1lbzOcBClZ2TPC8IuzFCrZHOZh5xQ1ZpG9CA4Y-pbeAWgIQ-e8SyQI-9H25YhTpgQUXrDZ7RKcg_fb_kFTES3fiGrmyeYrGwOWKBPCVND5IrPtX_PdDdakis2WYTikBQsVaWNZa1CR_RFaxuzvW0di8m1n"/>
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-on-background text-xl mb-2">Architect API</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow text-sm">Scalable microservices architecture providing headless CMS capabilities.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">Python</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">FastAPI</span>
+<span class="bg-white/5 text-secondary px-2 py-1 rounded font-code-label text-[10px]">Docker</span>
+</div>
+<div class="flex gap-4 mt-auto">
+<button class="text-sm font-code-label text-primary hover:text-primary-fixed transition-colors flex items-center gap-1">Live Demo <span class="material-symbols-outlined text-[16px]" data-icon="open_in_new">open_in_new</span></button>
+<button class="text-sm font-code-label text-outline hover:text-white transition-colors flex items-center gap-1">GitHub <span class="material-symbols-outlined text-[16px]" data-icon="code">code</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-section-padding bg-surface-container-low" id="experience">
+<div class="max-w-3xl mx-auto px-8">
+<h2 class="font-h2 text-h2 text-on-background mb-stack-lg text-center">Experience</h2>
+<div class="relative border-l-2 border-surface-variant ml-4 md:ml-0">
+<!-- Exp Item 1 -->
+<div class="mb-10 ml-8 relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-background border-2 border-primary rounded-full"></div>
+<div class="flex flex-col md:flex-row md:justify-between mb-1">
+<h3 class="font-h3 text-h3 text-on-background text-xl">Senior Architect</h3>
+<span class="font-code-label text-code-label text-primary">2021 - Present</span>
+</div>
+<div class="text-secondary font-medium mb-2">TechNova Solutions</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Lead architectural decisions for enterprise cloud applications. Managed a team of 8 developers, improving system performance by 40%.</p>
+</div>
+<!-- Exp Item 2 -->
+<div class="mb-10 ml-8 relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-background border-2 border-surface-variant rounded-full"></div>
+<div class="flex flex-col md:flex-row md:justify-between mb-1">
+<h3 class="font-h3 text-h3 text-on-background text-xl">Full-Stack Engineer</h3>
+<span class="font-code-label text-code-label text-outline">2018 - 2021</span>
+</div>
+<div class="text-secondary font-medium mb-2">DataFlow Inc.</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Developed and maintained scalable microservices using Node.js and React. Implemented CI/CD pipelines reducing deployment times.</p>
+</div>
+<!-- Exp Item 3 -->
+<div class="mb-0 ml-8 relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 bg-background border-2 border-surface-variant rounded-full"></div>
+<div class="flex flex-col md:flex-row md:justify-between mb-1">
+<h3 class="font-h3 text-h3 text-on-background text-xl">Frontend Developer</h3>
+<span class="font-code-label text-code-label text-outline">2016 - 2018</span>
+</div>
+<div class="text-secondary font-medium mb-2">Creative Digital Agency</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Built interactive web experiences for high-profile clients using modern JavaScript frameworks and advanced CSS techniques.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Contact & Footer Area -->
+<footer class="bg-slate-950 w-full py-12 border-t border-slate-800" id="contact">
+<div class="max-w-7xl mx-auto px-8 flex flex-col items-center justify-center space-y-8">
+<div class="text-center">
+<h2 class="font-h2 text-h2 text-on-background mb-2">Let's Build Something Together</h2>
+<p class="font-body-md text-body-md text-slate-500 mb-6">Currently open for new opportunities and interesting projects.</p>
+<a class="inline-block bg-primary text-on-primary px-8 py-3 rounded-DEFAULT font-code-label text-code-label btn-primary-glow transition-all duration-300" href="mailto:hello@example.com">Say Hello</a>
+</div>
+<div class="flex space-x-6 text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl" data-icon="code">code</span>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl" data-icon="link">link</span>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl" data-icon="mail">mail</span>
+</a>
+</div>
+<div class="w-full border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center font-sans text-xs text-slate-500">
+<p>© 2024 DevArchitect. Built for High-Performance.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<a class="text-slate-600 hover:text-indigo-400 transition-colors opacity-100 hover:opacity-80" href="#">GitHub</a>
+<a class="text-slate-600 hover:text-indigo-400 transition-colors opacity-100 hover:opacity-80" href="#">LinkedIn</a>
+<a class="text-slate-600 hover:text-indigo-400 transition-colors opacity-100 hover:opacity-80" href="#">Documentation</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
