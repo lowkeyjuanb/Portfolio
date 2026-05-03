@@ -41,7 +41,7 @@ export const portfolioContent = {
     socialLinks: [
       {
         label: "Email",
-        href: "mailto:this.is.juanb@gmail.com",
+        href: "mailto:jbarrera.codes@gmail.com",
         icon: mailSymbol,
         iconAlt: "Email",
       },
@@ -193,7 +193,7 @@ export const portfolioContent = {
     methods: [
       {
         label: "Email",
-        href: "mailto:this.is.juanb@gmail.com",
+        href: "mailto:jbarrera.codes@gmail.com",
         icon: mailSymbol,
         iconAlt: "Email",
       },

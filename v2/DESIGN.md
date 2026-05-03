@@ -1,165 +1,159 @@
 ---
-name: Architect Dark
+name: Industrial Editorial
 colors:
-  surface: '#0b1326'
-  surface-dim: '#0b1326'
-  surface-bright: '#31394d'
-  surface-container-lowest: '#060e20'
-  surface-container-low: '#131b2e'
-  surface-container: '#171f33'
-  surface-container-high: '#222a3d'
-  surface-container-highest: '#2d3449'
-  on-surface: '#dae2fd'
-  on-surface-variant: '#c7c4d7'
-  inverse-surface: '#dae2fd'
-  inverse-on-surface: '#283044'
-  outline: '#908fa0'
-  outline-variant: '#464554'
-  surface-tint: '#c0c1ff'
-  primary: '#c0c1ff'
-  on-primary: '#1000a9'
-  primary-container: '#8083ff'
-  on-primary-container: '#0d0096'
-  inverse-primary: '#494bd6'
-  secondary: '#7bd0ff'
-  on-secondary: '#00354a'
-  secondary-container: '#00a6e0'
-  on-secondary-container: '#00374d'
-  tertiary: '#bcc7de'
-  on-tertiary: '#263143'
-  tertiary-container: '#8691a7'
-  on-tertiary-container: '#1f2a3c'
-  error: '#ffb4ab'
-  on-error: '#690005'
-  error-container: '#93000a'
-  on-error-container: '#ffdad6'
-  primary-fixed: '#e1e0ff'
-  primary-fixed-dim: '#c0c1ff'
-  on-primary-fixed: '#07006c'
-  on-primary-fixed-variant: '#2f2ebe'
-  secondary-fixed: '#c4e7ff'
-  secondary-fixed-dim: '#7bd0ff'
-  on-secondary-fixed: '#001e2c'
-  on-secondary-fixed-variant: '#004c69'
-  tertiary-fixed: '#d8e3fb'
-  tertiary-fixed-dim: '#bcc7de'
-  on-tertiary-fixed: '#111c2d'
-  on-tertiary-fixed-variant: '#3c475a'
-  background: '#0b1326'
-  on-background: '#dae2fd'
-  surface-variant: '#2d3449'
+  surface: '#f9f9f9'
+  surface-dim: '#dadada'
+  surface-bright: '#f9f9f9'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f3f3f4'
+  surface-container: '#eeeeee'
+  surface-container-high: '#e8e8e8'
+  surface-container-highest: '#e2e2e2'
+  on-surface: '#1a1c1c'
+  on-surface-variant: '#434656'
+  inverse-surface: '#2f3131'
+  inverse-on-surface: '#f0f1f1'
+  outline: '#737688'
+  outline-variant: '#c3c5d9'
+  surface-tint: '#004dea'
+  primary: '#0041c8'
+  on-primary: '#ffffff'
+  primary-container: '#0055ff'
+  on-primary-container: '#e3e6ff'
+  inverse-primary: '#b6c4ff'
+  secondary: '#5e5e5e'
+  on-secondary: '#ffffff'
+  secondary-container: '#e2e2e2'
+  on-secondary-container: '#646464'
+  tertiary: '#705d00'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#caa900'
+  on-tertiary-container: '#4c3e00'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dce1ff'
+  primary-fixed-dim: '#b6c4ff'
+  on-primary-fixed: '#001551'
+  on-primary-fixed-variant: '#0039b3'
+  secondary-fixed: '#e2e2e2'
+  secondary-fixed-dim: '#c6c6c6'
+  on-secondary-fixed: '#1b1b1b'
+  on-secondary-fixed-variant: '#474747'
+  tertiary-fixed: '#ffe170'
+  tertiary-fixed-dim: '#e9c400'
+  on-tertiary-fixed: '#221b00'
+  on-tertiary-fixed-variant: '#544600'
+  background: '#f9f9f9'
+  on-background: '#1a1c1c'
+  surface-variant: '#e2e2e2'
 typography:
-  h1:
+  display-xl:
     fontFamily: Inter
-    fontSize: 4rem
+    fontSize: 120px
     fontWeight: '800'
-    lineHeight: '1.1'
-    letterSpacing: -0.02em
-  h2:
+    lineHeight: 100%
+    letterSpacing: -0.04em
+  headline-lg:
     fontFamily: Inter
-    fontSize: 2.5rem
+    fontSize: 48px
     fontWeight: '700'
-    lineHeight: '1.2'
-    letterSpacing: -0.01em
-  h3:
+    lineHeight: 110%
+    letterSpacing: -0.02em
+  headline-md:
     fontFamily: Inter
-    fontSize: 1.75rem
-    fontWeight: '600'
-    lineHeight: '1.3'
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 120%
+    letterSpacing: -0.01em
   body-lg:
     fontFamily: Inter
-    fontSize: 1.125rem
+    fontSize: 18px
     fontWeight: '400'
-    lineHeight: '1.75'
+    lineHeight: 160%
+    letterSpacing: '0'
   body-md:
     fontFamily: Inter
-    fontSize: 1rem
+    fontSize: 16px
     fontWeight: '400'
-    lineHeight: '1.6'
-  code-label:
-    fontFamily: Space Grotesk
-    fontSize: 0.875rem
+    lineHeight: 160%
+    letterSpacing: '0'
+  label-caps:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '700'
+    lineHeight: 100%
+    letterSpacing: 0.1em
+  mono-label:
+    fontFamily: Inter
+    fontSize: 11px
     fontWeight: '500'
-    lineHeight: '1.5'
+    lineHeight: 100%
     letterSpacing: 0.05em
-rounded:
-  sm: 0.25rem
-  DEFAULT: 0.5rem
-  md: 0.75rem
-  lg: 1rem
-  xl: 1.5rem
-  full: 9999px
 spacing:
-  base: 4px
-  container-max: 1280px
+  unit: 8px
   gutter: 24px
-  section-padding: 120px
-  stack-sm: 8px
-  stack-md: 16px
-  stack-lg: 32px
+  margin-page: 64px
+  section-gap: 160px
+  modular-unit: 40px
 ---
 
 ## Brand & Style
 
-This design system is engineered to project technical mastery, precision, and high-end software craftsmanship. The brand personality is authoritative yet understated, mirroring the profile of a senior developer who prioritizes system architecture and clean execution over decorative clutter. 
+This design system is built upon the intersection of precise engineering and high-end editorial curation. It adopts an **Industrial Minimalism** aesthetic, drawing inspiration from technical blueprints and the functional clarity of Swiss design. The visual narrative is defined by "The Blueprint Mentality"—treating the portfolio not just as a gallery, but as a documented technical achievement.
 
-The aesthetic sits at the intersection of **Minimalism** and **Glassmorphism**. It utilizes a deep, charcoal-based dark mode to reduce eye strain and provide a canvas for vibrant, high-energy accents. Visual depth is achieved through layered translucency and subtle atmospheric glows rather than heavy textures. Abstract grid overlays and monospaced accents provide a "system-level" feel, suggesting a developer who works close to the metal while maintaining a polished, user-centric perspective.
+The emotional response should be one of "Structured Innovation." It feels premium through its restraint, professional through its precision, and cinematic through its use of scale and high-contrast compositions. Key stylistic drivers include:
+*   **Technical Documentation:** Use of instructional UI details, such as coordinate systems, serial numbers, and "Figure 01" labeling.
+*   **Cinematic Pacing:** Large-scale imagery and intentional voids (negative space) to create a sense of rhythm and importance.
+*   **Functional Rawness:** Visible structural elements like fine hairlines and modular blocks that suggest the underlying logic of the software developer's craft.
 
 ## Colors
 
-The palette is anchored in a deep charcoal-blue (`#0f172a`) to establish a premium, tech-focused environment. Contrast is managed through a hierarchy of grays: high-contrast white (`#f8fafc`) for primary headings and muted slate for body text and metadata.
+The palette is strictly functional, avoiding gradients to maintain a flat, industrial "printed" quality. 
 
-The accent strategy uses a vibrant Indigo-to-Electric Blue gradient. This is reserved for primary actions, progress indicators, and interactive states. Subtle gradients should be applied as background radial glows (e.g., a deep violet glow in the top-right corner) to break the monotony of the dark background without sacrificing readability.
+*   **Black & White:** Form the architectural foundation. White provides the expansive "manual" background, while Black is used for heavy typographic weight and structural borders.
+*   **Signal Blue:** Reserved for primary actions, progress indicators, and "active" states. It represents the energy of code and connectivity.
+*   **Caution Yellow:** Used sparingly for metadata, tags, and small alerts. It mimics the functional markers found in industrial environments and physical manuals.
+*   **Greyscale Tones:** Used only for secondary technical details, such as grid lines or disabled states, ensuring they do not distract from the primary content.
 
 ## Typography
 
-This design system utilizes **Inter** for its systematic, neutral, and highly legible characteristics across all UI tiers. To emphasize the technical nature of the portfolio, **Space Grotesk** is used sparingly for labels, tags, and small technical metadata to provide a geometric, futuristic edge.
+This design system utilizes **Inter** exclusively to achieve a utilitarian, systematic appearance. The hierarchy is driven by extreme scale variance.
 
-Visual hierarchy is driven by extreme scale differences and weight. Headlines should be bold and tight, while body copy maintains generous line heights to ensure long-form technical case studies remain readable. Use uppercase for `code-label` elements to denote categories or tech-stack tags.
+*   **Display Typography:** Used for section headers or project titles. These should be set with tight tracking to feel like a solid block of "ink."
+*   **Editorial Styling:** Body text follows a classic column width (max 65 characters) to ensure readability, reminiscent of high-end journals or manuals.
+*   **Technical Labels:** Small, all-caps labels are used to annotate the UI. These are the "manual details"—often paired with Yellow backgrounds or thin Black outlines to denote metadata like "YEAR," "TECH STACK," or "VERSION."
 
 ## Layout & Spacing
 
-The layout follows a **Fixed Grid** model for desktop, centered on a 1280px container with a 12-column structure. Spacing is governed by a strict 4px/8px baseline power-of-two scale to ensure mathematical consistency.
+The layout is governed by a **12-column modular grid** with an emphasis on asymmetry. 
 
-Generous whitespace is mandatory to maintain a "premium" feel. Sections should be separated by significant vertical padding (`120px+`) to allow each project or skill set to breathe. Use a 24px gutter for grid items, ensuring that complex data visualizations or code blocks do not feel cramped.
+*   **Modular Rhythm:** Layouts should feel constructed. Use consistent 8px increments for internal component spacing, but use wide 160px gaps between major sections to provide cinematic "breathing room."
+*   **The "Offset" Principle:** Align core content to the grid, but allow technical labels or serial numbers to sit in the margins. This creates an "exploded view" effect common in product manuals.
+*   **Asymmetry:** Avoid centered layouts. Flush-left alignment is the standard. Large imagery should often span 8 columns, leaving 4 columns of whitespace for technical annotations or secondary text.
 
 ## Elevation & Depth
 
-Depth is communicated through **Glassmorphism** and tonal layering rather than traditional drop shadows. 
+To maintain the industrial-manual aesthetic, this design system rejects shadows and blurs. Depth is communicated through **Structural Layering and Bold Borders**.
 
-1. **Base Layer:** The deepest background (`#0f172a`).
-2. **Surface Layer:** Cards and containers use a slightly lighter slate (`#1e293b`) with a 1px stroke of `border-glass` to define edges.
-3. **Overlay Layer:** Modals and tooltips utilize `backdrop-filter: blur(12px)` with a semi-transparent background (`rgba(30, 41, 59, 0.7)`).
-
-Shadows, when used, are extra-diffused and tinted with the primary indigo color (`rgba(99, 102, 241, 0.2)`) to create a subtle neon underglow effect on primary buttons and active cards.
+*   **Hard Outlines:** Surfaces are defined by 1px or 2px solid black borders. There is no concept of "z-axis" height; instead, depth is perceived as "stacked sheets" of information.
+*   **Inversion:** High-contrast color blocks (Black containers on White backgrounds) create a visual hierarchy without needing elevation.
+*   **Technical Lines:** Use horizontal and vertical "hairlines" (0.5px - 1px) to connect related elements, simulating the look of a technical schematic or a blueprint.
 
 ## Shapes
 
-The design system uses a **Rounded** language (8px to 12px) to soften the "industrial" feel of the tech-focused palette. 
+The shape language is strictly **Sharp (0px)**. 
 
-- **Small elements (Checkboxes, Tags):** 4px (rounded-sm)
-- **Standard elements (Buttons, Inputs):** 8px (default)
-- **Large elements (Cards, Container Sections):** 16px (rounded-lg)
+Every element—buttons, cards, input fields, and containers—must have 90-degree corners. This reinforces the precision of industrial design and the "cut" feel of a printed document. 
 
-Maintain strict consistency in corner radii across nested elements (e.g., if a card has a 16px radius, the inner padding should be 16px and internal buttons should be 8px).
+Avoid circles or rounded pills even for buttons; use rectangles with generous internal padding to maintain the architectural integrity. The only exceptions are specific iconography or circular technical markers (like a "recording" indicator or a status dot).
 
 ## Components
 
-### Buttons
-- **Primary:** Solid indigo gradient background, white text, subtle indigo outer glow on hover.
-- **Secondary:** Transparent background with a 1px glass border; fills with a subtle slate on hover.
-- **Ghost:** No border or background; text turns primary indigo on hover.
-
-### Cards (Project/Experience)
-Cards feature a 1px top and left border in a lighter tint to simulate a light source. Use a background blur when cards overlap decorative background gradients.
-
-### Inputs & Form Fields
-Fields should use a dark, inset background (`#020617`) with a 1px border that transitions to the primary indigo color on focus. Use the `code-label` typography for field labels.
-
-### Chips & Tags
-Small, low-contrast capsules (e.g., "React", "Node.js"). Background: `rgba(255, 255, 255, 0.05)`, Text: `text-secondary`.
-
-### Additional Elements
-- **Code Blocks:** Syntax-highlighted blocks with a custom scrollbar and a "Copy" button in the top-right corner.
-- **Progress Indicators:** Thin, vibrant lines or circular dots for skill proficiency, utilizing the electric blue accent.
-- **Grid Pattern:** A subtle, repeating 20px dot or line grid used in the background of hero sections to reinforce the "systems" theme.
+*   **Buttons:** Rectangular, sharp-edged. Primary buttons use the Signal Blue background with White text. Secondary buttons use a Black 1px outline. Use "Label-caps" typography for button labels.
+*   **The "Technical Tag":** Small rectangular chips with a Caution Yellow background and Black mono-label text. Used for status indicators (e.g., [LIVE], [STABLE], [V.1.0]).
+*   **Content Cards:** Defined by 1px Black outlines. Headlines sit at the top-left, while a "Figure Number" (e.g., 01, 02) sits at the top-right in a small mono-font.
+*   **Lists:** Editorial-style bullet points using small square markers instead of circles. Horizontal hairlines separate list items to maintain the modular grid look.
+*   **Inputs:** Underlined or fully boxed with sharp corners. Label text sits above the input field, left-aligned, in a small caps format.
+*   **Annotated Image:** Images should be framed by a 1px border. Technical lines may "point" to specific features within the image, leading to a small text block in the margin, imitating a product manual.
