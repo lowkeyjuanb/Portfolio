@@ -3,6 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "node newv2/server.js"
+    "dev": "node server.js"
   }
 }
