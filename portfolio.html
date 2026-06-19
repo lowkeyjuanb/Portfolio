@@ -92,24 +92,27 @@
 
   /* Top bar */
   .topbar{
-    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:18px 30px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+    padding:18px clamp(16px,2.4cqw,30px);
+    font-size:clamp(8px,0.85cqw,10px);
+    letter-spacing:.1em;text-transform:uppercase;
     position:-webkit-sticky;position:sticky;top:0;z-index:1000;
     background:rgba(255,255,255,.92);
     backdrop-filter:blur(6px);
     border-bottom:1px solid rgba(0,85,255,.16)
   }
   .device.mobile .topbar{padding:18px 20px}
-  .topbar .logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:14px;letter-spacing:-.01em;text-transform:none;display:flex;align-items:center;gap:8px;justify-self:start;grid-column:1}
+  .topbar .logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(11px,1.1cqw,14px);letter-spacing:-.01em;text-transform:none;display:flex;align-items:center;gap:8px;justify-self:start;grid-column:1}
   .logo-mark{width:22px;height:22px;border-radius:50%;background:var(--ink);position:relative;overflow:hidden}
   .logo-mark::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--bg)}
-  .nav-pri{display:flex;gap:22px;justify-self:center;grid-column:2}
+  .nav-pri{display:flex;gap:clamp(10px,1.5cqw,22px);justify-self:center;grid-column:2}
   .nav-pri a{position:relative}
   .nav-pri a .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--blue);margin-right:8px;vertical-align:middle;opacity:.78;transition:transform .2s ease,opacity .2s ease,background .2s ease}
   .nav-pri a:nth-child(2) .dot{background:#5f8ff3}
   .nav-pri a:nth-child(3) .dot{background:#c9a300}
   .nav-pri a:nth-child(4) .dot{background:#7da5ff}
   .nav-pri a.active .dot{opacity:1;transform:scale(1.25)}
-  .nav-end{display:flex;gap:18px;align-items:center;justify-self:end;grid-column:3}
+  .nav-end{display:flex;gap:18px;align-items:center;justify-self:end;grid-column:3;white-space:nowrap}
   .icon-btn{width:30px;height:30px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center}
   .menu-pill{display:none;border:1px solid var(--gray-500);border-radius:999px;padding:8px 14px;font-size:11px;letter-spacing:.14em;background:linear-gradient(180deg,var(--bg),var(--gray-100));transition:all .2s ease}
   .menu-pill:hover{border-color:var(--blue);color:var(--blue)}
