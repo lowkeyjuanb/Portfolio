@@ -11,7 +11,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 
 function getViewportFromWidth(width) {
   if (width <= 640) return "mobile";
-  if (width <= 1024) return "tablet";
+  if (width <= 1280) return "tablet";
   return "desktop";
 }
 
